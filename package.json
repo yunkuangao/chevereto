@@ -1,21 +1,43 @@
 {
-  "name": "koishi-plugin-chevereto",
+  "name": "@yunkuangao/koishi-plugin-chevereto",
   "description": "用于chevereto的图片",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
+  "homepage": "https://github.com/yunkuangao/chevereto",
+  "author": "艾特 <1024629483@qq.com>,",
+  "contributors": [
+    "logier <785189653@qq.com>",
+    "yun <yun@yka.moe>"
+  ],
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
-  "license": "MIT",
-  "scripts": {},
+  "license": "AGPL-3.0",
+  "scripts": {
+    "publish": "npm publish --access public",
+    "dev": "cross-env NODE_ENV=development koishi start -r esbuild-register -r yml-register",
+    "start": "koishi start"
+  },
   "keywords": [
-    "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "chevereto",
+    "image"
   ],
   "peerDependencies": {
-    "koishi": "^4.13.6"
+    "koishi": "^4.13.6",
+    "koishi-plugin-puppeteer": "^3.5.0"
+  },
+  "devDependencies": {
+    "@koishijs/plugin-mock": "^2.4.3",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.2",
+    "chai": "^4.3.7",
+    "esbuild-register": "^3.4.2",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6"
   }
 }
