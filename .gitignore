@@ -1,5 +1,7 @@
 lib
 dist
+logs
+cache
 
 node_modules
 npm-debug.log
