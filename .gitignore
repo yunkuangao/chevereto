@@ -2,6 +2,7 @@ lib
 dist
 logs
 cache
+data
 
 node_modules
 npm-debug.log

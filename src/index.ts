@@ -44,7 +44,7 @@ export const schema = Schema.object({
 
 export async function apply(ctx: Context, config: Config) {
 
-  ctx.command('chv <参数名称:string>', {"authority": 1})
+  ctx.command('chv', {authority: 1})
     .option("nsfw", "-n", {authority: 2, fallback: false})
     .shortcut("不够涩", {options: {nsfw: true}})
     .action(async ({session, options}) => {

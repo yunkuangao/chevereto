@@ -1,7 +1,7 @@
 {
   "name": "@yunkuangao/koishi-plugin-chevereto",
   "description": "用于chevereto的图片",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "homepage": "https://github.com/yunkuangao/chevereto",
   "author": "艾特 <1024629483@qq.com>,",
